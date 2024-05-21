@@ -73,7 +73,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 600px;
     background: rgb(221,221,221);
     background: linear-gradient(0deg, rgba(227,227,227,1) 0%, rgba(255,255,255,1) 100%);
 }
@@ -101,8 +101,8 @@ header {
 }
 
 .image-hero {
-    height: 15rem;
-    width: 15rem;
+    height: 20rem;
+    width: 20rem;
     border-radius: 50%;
 }
 
@@ -130,7 +130,7 @@ header {
 }
 
 .title-1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 800;
     color: black;
@@ -138,7 +138,7 @@ header {
 }
 
 .subt-2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 700;
     color: gray;
