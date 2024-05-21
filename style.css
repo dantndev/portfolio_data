@@ -65,3 +65,156 @@ header {
 .ls-link:hover {
     color: gray;
 }
+
+
+/* HERO SECTION*/
+
+#hero-sect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(221,221,221);
+    background: linear-gradient(0deg, rgba(227,227,227,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.fade-in-bottom {
+	animation: fade-in-bottom 1.0s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.figure-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 64px;
+}
+
+.image-hero {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+.text-btn {
+    /*border: 1px solid;*/
+    align-items: center;
+    margin-left: 64px;
+    justify-content: center;
+}
+
+.hero-text {
+    margin-bottom: 2rem;
+}
+
+.hero-text h2,
+.hero-text h1 {
+    text-align: center;
+}
+
+.subt-1 {
+    font-size: 1rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    color: gray;
+}
+
+.title-1 {
+    font-size: 1.5rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    color: black;
+    margin: 0.4rem 0;
+}
+
+.subt-2 {
+    font-size: 1rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    color: gray;
+}
+
+.hero-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-auto {
+    appearance: none;
+    border: 2px solid hsl(0, 0%, 10%);
+    border-radius: 16px;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    min-height: 3rem;
+    min-width: 8.5rem;
+}
+
+.download-btn {
+    background-color:  rgba(0, 0, 0, 0);
+    color: black;
+    margin-right: 1rem;
+}
+
+.download-btn:hover {
+    transform: translateY(-0.5px);
+}
+
+.download-btn:active {
+    transform: translateY(0);
+}
+
+.contact-btn {
+    background-color: black;
+    color: white;
+    margin-left: 1rem;
+}
+
+.contact-btn:hover {
+    transform: translateY(-0.5px);
+}
+
+.contact-btn:active {
+    transform: translateY(0);
+}
+
+.fade-in {
+	animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+}
+
+ @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* ABOUT ME*/
+
+#about-sect {
+    justify-content: center;
+    height: 600px;
+    background: rgb(227,227,227);
+    background: linear-gradient(180deg, rgba(227,227,227,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.text-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
