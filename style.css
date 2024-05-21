@@ -19,17 +19,23 @@ header {
     height: 100px;
     flex-shrink: 0;
     padding:  1rem 4rem;
-    border: 1px solid;
+    /*border: 1px solid;*/
 }
 
 .logo-nav {
     color: #000;
+    text-decoration: none;
     font-family: "Plus Jakarta Sans";
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: -1.92px;
+
+}
+
+.logo-nav:hover {
+    cursor: pointer;
 }
 
 .nav-menu {
@@ -58,8 +64,4 @@ header {
 
 .ls-link:hover {
     color: gray;
-}
-
-.ls-link:active {
-    
 }
