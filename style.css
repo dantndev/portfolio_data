@@ -327,10 +327,8 @@ header {
         width: 2.5rem;    
     }
     .nav-bar {
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
-        flex-shrink: 0;
-
     }
     #hero-sect {
       flex-direction: column;
@@ -338,8 +336,12 @@ header {
     }
     .figure-hero {
         margin-right: 0;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         margin-top: 1rem;
+    }
+    .image-hero {
+        height: 10rem;
+        width: 10rem;
     }
     .text-btn {
         margin-left: 0;
