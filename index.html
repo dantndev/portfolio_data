@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,17 +23,27 @@
                 <li><a class="ls-link" href="#contact-sect">CONTACT ME</a></li>
             </ul>
             <figure class="ham-menu">
-                <a href="#"><img class="ham-nav-menu" src="Resources/menu.svg" alt="menu"></a>
+                <button class="hamburger-menu" onclick="toggleSidebar()"><img class="ham-nav-menu" src="Resources/menu.svg" alt="menu"></button>
             </figure>
         </nav>
     </header>
     <main>
         <section id="hero-sect">
-            
-            <figure class="figure-hero">
+            <aside class="sidebar" id="sidebar"> <!--SIDE BAR RESPONSIVE START-->
+                <div class="menu-aside-bar">
+                    <h2>MENU</h2>
+                    <button class="hamburger-menu" onclick="toggleSidebar()"><img class="close-nav-menu" src="Resources/close.svg" alt="close-menu"></button>
+                </div>
+                <p class="aside-par"><a class="aside-link" href="#hero-sect">HOME</a></p>
+                <p class="aside-par"><a class="aside-link" href="#about-sect">ABOUT ME</a></p>
+                <p class="aside-par"><a class="aside-link" href="#skills-sect">SKILLS</a></p>
+                <p class="aside-par"><a class="aside-link" href="#proj-sect">PROJECTS</a></p>
+                <p class="aside-par"><a class="aside-link" href="#contact-sect">CONTACT ME</a></p>
+            </aside> <!--SIDE BAR RESPONSIVE END-->
+            <figure class="figure-hero"> <!--AVATAR HERO SECTION START-->
                 <img class="image-hero" src="Resources/Profile Picture Portfolio.jpg" alt="Daniel Avatar">
-            </figure>
-            <div class="text-btn">
+            </figure> <!--AVATAR HERO SECTION END-->
+            <div class="text-btn"> <!--TEXTO Y SOCIAL HERO SECTION START-->
                 <div class="hero-text">
                     <h2 class="subt-1 fade-in-bottom">Hello, I'm</h2>
                     <h1 class="title-1 fade-in-bottom">Daniel Trápala</h1>
@@ -46,12 +57,27 @@
                     <a class="social-link" href="#"><i class='bx bxl-github slide-top scale-in-center'></i></a>
                     <a class="social-link" href="#"><i class='bx bxl-linkedin-square scale-in-center'></i></a>
                 </div>
-            </div>
+            </div> <!--TEXTO Y SOCIAL HERO SECTION END-->
         </section>
         <section id="about-sect">
+
             <div class="text-box">
                 <h1 class="txt-about">ABOUT ME</h1>
             </div>
+            <div class="about-text">
+                <p class="about-para">
+                ¡Hola! Soy Daniel, egresado de la carrera de ingeniería de 
+                minas y metalurgista apasionado por la tecnología y el 
+                análisis de datos. A mis 29 años, disfruto mantenerme al 
+                día con las últimas tendencias tecnológicas mientras aplico 
+                mis habilidades técnicas en mi trabajo diario. Fuera del 
+                ámbito profesional, dedico mi tiempo libre a la producción 
+                musical y al trading. 
+                Siempre estoy buscando nuevas formas de combinar mis 
+                pasiones y explorar nuevas oportunidades.
+                </p>
+            </div>
+
         </section>
     </main>
 </body>
