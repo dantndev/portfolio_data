@@ -5,7 +5,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+  
+
 header {
+    background: linear-gradient(180deg, rgba(227,227,227,1) 0%, rgba(255,255,255,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,6 +26,17 @@ header {
     flex-shrink: 0;
     padding:  1rem 4rem;
     /*border: 1px solid;*/
+}
+
+.ham-menu {
+    display: none;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.ham-nav-menu {
+    height: 2.5rem;
+    width: 2.5rem;    
 }
 
 .logo-nav {
@@ -63,7 +80,7 @@ header {
 }
 
 .ls-link:hover {
-    color: gray;
+    color: rgb(95, 95, 95);
 }
 
 
@@ -104,6 +121,7 @@ header {
     height: 20rem;
     width: 20rem;
     border-radius: 50%;
+    border: 5px solid transparent;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -271,3 +289,42 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+
+
+
+
+/* MEDIA QUAERIES*/
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    .ham-menu {
+        display: block;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .ham-nav-menu {
+        height: 2.5rem;
+        width: 2.5rem;    
+    }
+    .nav-bar {
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    #hero-sect {
+      flex-direction: column;
+      height: auto;
+    }
+    .figure-hero {
+        margin-right: 0;
+        margin-bottom: 3rem;
+        margin-top: 5rem;
+    }
+    .text-btn {
+        margin-left: 0;
+        margin-bottom: 5rem;
+    }
+  }
