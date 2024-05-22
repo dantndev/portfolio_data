@@ -174,7 +174,7 @@ header {
 .btn-auto {
     appearance: none;
     border: 2px solid hsl(0, 0%, 10%);
-    border-radius: 16px;
+    border-radius: 1rem;
     cursor: pointer;
     padding: 1rem 2rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -308,6 +308,9 @@ header {
 }
 
 @media (max-width: 768px) {
+    body {
+        width: auto;
+    }
     .nav-menu {
         display: none;
     }
