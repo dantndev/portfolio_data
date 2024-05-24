@@ -9,7 +9,7 @@
 html {
     scroll-behavior: smooth;
 }
-  
+
 
 header {
     background: linear-gradient(180deg, rgba(227,227,227,1) 0%, rgba(255,255,255,1) 100%);
@@ -17,6 +17,7 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 
 .nav-bar {
     display: flex;
@@ -154,7 +155,7 @@ header {
     transform: translateX(1.5px);
 }
 
-/* SIDEBAR FINISH*/
+/* SIDEBAR END*/
 
 /* HERO SECTION*/
 
@@ -359,12 +360,15 @@ header {
     background: rgb(227,227,227);
     background: linear-gradient(180deg, rgba(227,227,227,1) 0%, rgba(255,255,255,1) 100%);
     padding: 1rem;
+    flex-direction: column;
+    width: 100vw;
 }
 
 .text-box {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
 .text-box h1 {
@@ -375,13 +379,39 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 50%;
-    min-width: 350px;
+    width: 100%;
+    /*max-width: 50%;
+    min-width: 350px;*/
 }
 
-.about-para {
-    max-width: 80%; 
+.about-para-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    /*border: 1px solid;*/
+}
+
+.about-paragraph {
+   /* max-width: 100%;*/
+    min-width: 20rem;
+    max-width: 25rem;
     text-align: justify;
+    margin-left: 3rem;
+    /*border: 1px solid;*/
+}
+
+.img-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.trazo-man {
+    height: 15rem;
+    width: 15rem;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
 }
 
 
@@ -426,8 +456,8 @@ header {
     }
     .figure-hero {
         margin-right: 0;
-        margin-bottom: 2rem;
-        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+        margin-top: 3rem;
     }
     .image-hero {
         height: 10rem;
@@ -435,7 +465,7 @@ header {
     }
     .text-btn {
         margin-left: 0;
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
     }
     .sidebar {
         right: 0; 
@@ -445,5 +475,14 @@ header {
     }
     .text-box {
         margin-bottom: 1.5rem;
+    }
+    .about-para-container {
+        justify-content: center;
+    }
+    .img-about {
+        display: none;
+    }
+    .about-paragraph {
+        margin-left: 0;
     }
   }
